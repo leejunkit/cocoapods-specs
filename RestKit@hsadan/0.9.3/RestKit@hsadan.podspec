@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         =  'RestKit@hsadan'
-  s.version      =  '0.10.0'
+  s.version      =  '0.9.3'
   s.summary      =  'RestKit is a framework for consuming and modeling RESTful web resources on iOS and OS X.'
   s.homepage     =  'http://www.restkit.org'
   s.author       =  { 'Blake Watters' => 'blakewatters@gmail.com' }
