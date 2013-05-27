@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.source       =  { :git => 'https://github.com/hsadan/RestKit.git' }
   s.license      =  'Apache License, Version 2.0'
 
-  s.source_files =  'Code/**/*.{h,m}'
+  s.source_files =  '{Code,Vendor}/**/*.{h,m}'
   s.public_header_files = 'Code/RestKit.h'
   s.frameworks = ['CFNetwork', 'CoreData', 'Security', 'MobileCoreServices', 'SystemConfiguration', 'QuartzCore']
   s.libraries = ['libxml2']
