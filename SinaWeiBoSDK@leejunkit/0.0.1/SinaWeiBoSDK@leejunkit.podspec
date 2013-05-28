@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name     = 'SinaWeiboSDK'
+  s.name     = 'SinaWeiBoSDK@leejunkit'
   s.version  = '0.0.1'
   s.license  = 'MIT'
   s.summary  = 'SDK for publishing to Weibo.'
