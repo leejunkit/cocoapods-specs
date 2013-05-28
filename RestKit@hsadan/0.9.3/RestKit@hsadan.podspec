@@ -19,7 +19,9 @@ Pod::Spec.new do |s|
   s.dependency 'LibComponentLogging-Core'
   s.dependency 'LibComponentLogging-NSLog'
   s.dependency 'LibComponentLogging-pods'
-  s.dependency 'ISO8601DateFormatter'
   s.dependency 'XMLReader'
 
+  s.subspec 'iso8601parser' do |ss|
+    ss.source_files = 'Vendor/iso8601parser/*.{h,m}'
+  end
 end
