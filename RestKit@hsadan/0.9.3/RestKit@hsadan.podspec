@@ -20,7 +20,6 @@ Pod::Spec.new do |s|
   s.dependency 'LibComponentLogging-NSLog'
   s.dependency 'LibComponentLogging-pods'
   s.dependency 'XMLReader'
-  s.dependency 'RestKit@hsadan/iso8601parser'
 
 #  s.subspec 'iso8601parser' do |ss|
 #    ss.source_files = 'Vendor/iso8601parser/*.{h,m}'
