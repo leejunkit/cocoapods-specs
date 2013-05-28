@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.source       =  { :git => 'https://github.com/hsadan/RestKit.git' }
   s.license      =  'Apache License, Version 2.0'
 
-  s.source_files =  'Code/**/*.{h,m}'
+  s.source_files =  'Code/RestKit.h'
   s.frameworks = ['CFNetwork', 'CoreData', 'Security', 'MobileCoreServices', 'SystemConfiguration', 'QuartzCore']
   s.libraries = 'xml2'
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
@@ -24,5 +24,21 @@ Pod::Spec.new do |s|
 
   s.subspec 'iso8601parser' do |ss|
     ss.source_files = 'Vendor/iso8601parser/*.{h,m}'
+  end
+
+  s.subspec 'CoreData' do |ss|
+    ss.source_files = 'Code/CoreData/**/*.{h,m}'
+  end
+
+  s.subspec 'Network' do |ss|
+    ss.source_files = 'Code/Network/**/*.{h,m}'
+  end
+
+  s.subspec 'ObjectMapping' do |ss|
+    ss.source_files = 'Code/ObjectMapping/**/*.{h,m}'
+  end
+
+  s.subspec 'Support' do |ss|
+    ss.source_files = 'Code/Support/**/*.{h,m}'
   end
 end
