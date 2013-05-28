@@ -40,4 +40,21 @@ Pod::Spec.new do |s|
   s.subspec 'Support' do |ss|
     ss.source_files = 'Code/Support/**/*.{h,m}'
   end
+
+  s.subspec 'NSLogger' do |ss|
+    ss.source_files = 'Vendor/NSLogger/**/*.{h,m}'
+  end
+
+  s.subspec 'NXJSON' do |ss|
+    ss.source_files = 'Vendor/NXJSON/**/*.{h,m}'
+  end
+
+  s.subspec 'SBJSON' do |ss|
+    ss.source_files = 'Vendor/SBJSON/**/*.{h,m}'
+  end
+
+  s.subspec 'YAJL' do |ss|
+    ss.source_files = 'Vendor/YAJL/**/*.{h,m}'
+  end
+
 end
