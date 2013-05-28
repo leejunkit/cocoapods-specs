@@ -41,4 +41,8 @@ Pod::Spec.new do |s|
   s.subspec 'Support' do |ss|
     ss.source_files = 'Code/Support/**/*.{h,m}'
   end
+
+  s.subspec 'UI' do |ss|
+    ss.source_files = 'Code/UI/**/*.{h,m}'
+  end
 end
