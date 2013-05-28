@@ -8,4 +8,8 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'git@github.com:leejunkit/SinaWeiboSDK.git' }
   s.platform = :ios
   s.source_files = 'SinaWeiboSDK/**/*.{h,m}'
+
+  s.subspec 'GTMBase64' do |ss|
+  	ss.source_files = 'SinaWeiBoSDK/SinaWeiBoSDK/CTMBase64/*.{h,m}'
+  end
 end

@@ -57,8 +57,4 @@ Pod::Spec.new do |s|
     ss.source_files = 'Vendor/YAJL/**/*.{h,m}'
   end
 
-  s.subspec 'GTMBase64' do |ss|
-    ss.source_files = 'Vendor/YAJL/Libaries/GTM/*.{h,m}'
-  end 
-
 end
