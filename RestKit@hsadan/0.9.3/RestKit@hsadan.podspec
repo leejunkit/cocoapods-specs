@@ -7,9 +7,17 @@ Pod::Spec.new do |s|
   s.source       =  { :git => 'https://github.com/hsadan/RestKit.git' }
   s.license      =  'Apache License, Version 2.0'
 
-  s.source_files =  '{Code,Vendor,Tests}/**/*.{h,m}'
-  s.public_header_files = 'Code/RestKit.h'
+  s.source_files =  'Code/**/*.{h,m}'
   s.frameworks = ['CFNetwork', 'CoreData', 'Security', 'MobileCoreServices', 'SystemConfiguration', 'QuartzCore']
-  s.libraries = ['libxml2']
+  s.libraries = 'xml2'
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
+  
+  s.dependency 'cocoa-oauth'
+  s.dependency 'FileMD5Hash'
+  s.dependency 'JSONKit'
+  s.dependency 'SOCKit', '1.0'
+  s.dependency 'LibComponentLogging-Core'
+  s.dependency 'LibComponentLogging-NSLog'
+  s.dependency 'LibComponentLogging-pods'
 
 end
