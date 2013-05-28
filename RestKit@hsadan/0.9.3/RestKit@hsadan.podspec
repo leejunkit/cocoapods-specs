@@ -20,5 +20,6 @@ Pod::Spec.new do |s|
   s.dependency 'LibComponentLogging-NSLog'
   s.dependency 'LibComponentLogging-pods'
   s.dependency 'ISO8601DateFormatter'
+  s.dependency 'XMLReader'
 
 end
