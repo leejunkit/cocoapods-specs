@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.dependency 'LibComponentLogging-NSLog'
   s.dependency 'LibComponentLogging-pods'
   s.dependency 'XMLReader'
+  s.dependency 'yajl'
 
 #  s.subspec 'iso8601parser' do |ss|
 #    ss.source_files = 'Vendor/iso8601parser/*.{h,m}'
@@ -53,8 +54,8 @@ Pod::Spec.new do |s|
     ss.source_files = 'Vendor/SBJSON/**/*.{h,m}'
   end
 
-  s.subspec 'YAJL' do |ss|
-    ss.source_files = 'Vendor/YAJL/**/*.{h,m}'
-  end
+  # s.subspec 'YAJL' do |ss|
+  #   ss.source_files = 'Vendor/YAJL/**/*.{h,m}'
+  # end
 
 end
