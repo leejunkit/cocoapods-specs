@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary      =  'RestKit is a framework for consuming and modeling RESTful web resources on iOS and OS X.'
   s.homepage     =  'http://www.restkit.org'
   s.author       =  { 'Blake Watters' => 'blakewatters@gmail.com' }
-  s.source       =  { :git => 'https://github.com/hsadan/RestKit.git' }
+  s.source       =  { :git => 'https://github.com/hsadan/RestKit.git', :tag => '0.9.3' }
   s.license      =  'Apache License, Version 2.0'
 
   s.source_files =  'Code/RestKit.h'
@@ -22,9 +22,9 @@ Pod::Spec.new do |s|
   s.dependency 'XMLReader'
   s.dependency 'RestKit@hsadan/iso8601parser'
 
-  s.subspec 'iso8601parser' do |ss|
-    ss.source_files = 'Vendor/iso8601parser/*.{h,m}'
-  end
+#  s.subspec 'iso8601parser' do |ss|
+#    ss.source_files = 'Vendor/iso8601parser/*.{h,m}'
+#  end
 
   s.subspec 'CoreData' do |ss|
     ss.source_files = 'Code/CoreData/**/*.{h,m}'
@@ -40,9 +40,5 @@ Pod::Spec.new do |s|
 
   s.subspec 'Support' do |ss|
     ss.source_files = 'Code/Support/**/*.{h,m}'
-  end
-
-  s.subspec 'UI' do |ss|
-    ss.source_files = 'Code/UI/**/*.{h,m}'
   end
 end
