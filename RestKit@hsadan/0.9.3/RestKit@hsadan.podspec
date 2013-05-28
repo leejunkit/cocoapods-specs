@@ -22,10 +22,6 @@ Pod::Spec.new do |s|
   s.dependency 'XMLReader'
   s.dependency 'yajl'
 
-#  s.subspec 'iso8601parser' do |ss|
-#    ss.source_files = 'Vendor/iso8601parser/*.{h,m}'
-#  end
-
   s.subspec 'CoreData' do |ss|
     ss.source_files = 'Code/CoreData/**/*.{h,m}'
   end
@@ -54,8 +50,8 @@ Pod::Spec.new do |s|
     ss.source_files = 'Vendor/SBJSON/**/*.{h,m}'
   end
 
-  # s.subspec 'YAJL' do |ss|
-  #   ss.source_files = 'Vendor/YAJL/**/*.{h,m}'
-  # end
+  s.subspec 'YAJL' do |ss|
+    ss.source_files = 'Vendor/YAJL/**/*.{h,m}'
+  end
 
 end
