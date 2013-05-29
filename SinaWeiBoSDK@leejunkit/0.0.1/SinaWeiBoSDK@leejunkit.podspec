@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'git@github.com:leejunkit/SinaWeiboSDK.git' }
   s.platform = :ios
   s.source_files = 'SinaWeiBoSDK/SinaWeiBoSDK/**/*.{h,m}'
-  s.header_mapping_dir = 'SinaWeiBoSDK/SinaWeiBoSDK'
+  s.header_mappings_dir = 'SinaWeiBoSDK/SinaWeiBoSDK'
 
 end
