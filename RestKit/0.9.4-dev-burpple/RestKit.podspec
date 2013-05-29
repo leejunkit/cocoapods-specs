@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name         =  'RestKit'
-  s.version      =  '0.9.3'
+  s.version      =  '0.9.4-dev-burpple'
   s.summary      =  'RestKit is a framework for consuming and modeling RESTful web resources on iOS and OS X.'
   s.homepage     =  'http://www.restkit.org'
   s.author       =  { 'Blake Watters' => 'blakewatters@gmail.com' }
-  s.source       =  { :git => 'https://github.com/hsadan/RestKit.git', :tag => '0.9.3' }
+  s.source       =  { :git => 'https://github.com/leejunkit/RestKit.git', :tag => '0.9.4-dev-burpple' }
   s.license      =  'Apache License, Version 2.0'
 
   s.source_files =  'Code/RestKit.h'
@@ -25,44 +25,29 @@ Pod::Spec.new do |s|
   s.subspec 'CoreData' do |ss|
     ss.source_files = 'Code/CoreData/**/*.{h,m}'
     ss.frameworks = 'CoreData'
-    ss.header_dir = 'RKCoreData'
+    ss.header_dir = '../RKCoreData' # to prevent header collision with Apple's CoreData
   end
 
   s.subspec 'Network' do |ss|
     ss.source_files = 'Code/Network/**/*.{h,m}'
-    #ss.header_dir = 'Network'
   end
 
   s.subspec 'ObjectMapping' do |ss|
     ss.source_files = 'Code/ObjectMapping/**/*.{h,m}'
-    #ss.header_dir = 'ObjectMapping'
     ss.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
     ss.libraries = 'xml2'
   end
 
   s.subspec 'Support' do |ss|
     ss.source_files = 'Code/Support/**/*.{h,m}'
-    #ss.header_dir = 'Support'
   end
 
-  s.subspec 'NSLogger' do |ss|
-    ss.source_files = 'Vendor/NSLogger/**/*.{h,m}'
-    #ss.header_dir = 'Vendor/NSLogger'
+  s.subspec 'UI' do |ss|
+    ss.source_files = 'Code/UI/**/*.{h,m}'
   end
 
-  s.subspec 'NXJSON' do |ss|
-    ss.source_files = 'Vendor/NXJSON/**/*.{h,m}'
-    #ss.header_dir = 'Vendor/NXJSON'
+  s.subspec 'iso8601parser' do |ss|
+    ss.source_files = 'Vendor/iso8601parser/**/*.{h,m}'
+    ss.header_dir = 'Vendor/iso8601parser'
   end
-
-  s.subspec 'SBJSON' do |ss|
-    ss.source_files = 'Vendor/SBJSON/**/*.{h,m}'
-    #ss.header_dir = 'Vendor/SBJSON'
-  end
-
-  s.subspec 'YAJL' do |ss|
-    ss.source_files = 'Vendor/YAJL/**/*.{h,m}'
-    #ss.header_dir = 'Vendor/YAJL'
-  end
-
 end
